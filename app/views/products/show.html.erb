@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container anchor introshow">
+<h3>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</h3>
+
+<h4>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</h4>
+
+  <strong>Image url:</strong>
+  <%= image_tag(@product.image_url, class: "img-zoom img-responsive bigshowpic") %>
+</div>
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
