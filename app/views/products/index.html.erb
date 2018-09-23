@@ -8,7 +8,7 @@
   <div class="row" id="productos">
     <% @products.each do |product| %>
     <div class="col-md-4">
-      <h1><%= product.name %></h1>
+      <h1><%= link_to product.name, product %></h1>
       <p><%= product.description %></p>
       <p><%= product.color %></p>
       <p><%= product.price %></p>
