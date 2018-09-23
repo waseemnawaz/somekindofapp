@@ -4,7 +4,7 @@ class SimplePagesController < ApplicationController
 
   def landing_page
   	@featured_product = Product.first
-  	#@products = Product.limit(3)
-  	@products = Product.offset(rand(Product.count)).limit(4)
+  	@products = Product.limit(3)
+  	#@products = Product.offset(rand(Product.count)).limit(4)
   end
 end
