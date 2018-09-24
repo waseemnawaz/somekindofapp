@@ -1,0 +1,33 @@
+<div class="container anchor introshow">
+
+<h3>
+	<strong>Order ID: </strong><%= @order.id %>
+</h3>
+
+<h3>
+  <strong>Name:</strong>
+  <%= @order.product.name %>
+</h3>
+
+<h4>
+  <strong>Description:</strong>
+  <%= @order.product.description %>
+</h4>
+
+<h4>
+  <strong>Color:</strong>
+  <%= @order.product.color %>
+</h4>
+
+<h4>
+	<strong>Total Price: </strong><%= number_to_currency(@order.total.to_f) %>
+</h4>
+
+<h4>
+  <strong>Product Price:</strong>
+  <%= number_to_currency(@order.product.price/100.to_f) %>
+</h4>
+
+  <strong>Image url:</strong>
+  <%= image_tag(@order.product.image_url, class: "img-zoom img-responsive bigshowpic") %>
+</div>
