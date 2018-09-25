@@ -20,6 +20,7 @@
     <% @orders.each do |order| %>
     <div class="col-md-4">
       <h1>Order # <%= order.id %>:<%= link_to order.product.name, order %></h1>
+      <p><%= link_to order.product_id, order.product %></p>
       <p><%= order.product.description %></p>
       <p><%= order.product.color %></p>
       <p><%= order.product.price %></p>

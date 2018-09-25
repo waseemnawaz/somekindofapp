@@ -25,4 +25,6 @@
   <%= image_tag(@product.image_url, class: "img-zoom img-responsive bigshowpic") %>
 </div>
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> |
+
+<%= link_to 'Back to order', order_path %>
