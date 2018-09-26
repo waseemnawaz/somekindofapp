@@ -7,7 +7,7 @@
   
   <div class="row" id="productos">
     <% @products.each do |product| %>
-    <%= render partial: "product", locals: {product: product} %>
+      <%= render partial: "product", locals: {product: product} %>
       <%#= render product %><!-- renders the _product.html.erb file-->
     <% end %> 
     <%#= render @products %>
