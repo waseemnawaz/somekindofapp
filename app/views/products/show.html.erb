@@ -23,6 +23,11 @@
 
   <strong>Image url:</strong>
   <%= image_tag(@product.image_url, class: "img-zoom img-responsive bigshowpic") %>
+
+<%=  @product.highest_rating_comment %>
+<%=  @product.lowest_rating_comment %>
+<%#= @product.comments %>
+
 </div>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %> |
