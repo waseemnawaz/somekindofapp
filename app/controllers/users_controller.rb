@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @user_orders = @user.orders #this is to show orders on users how page
   end
 
   # GET /users/new

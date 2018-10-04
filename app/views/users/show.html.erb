@@ -10,5 +10,20 @@
   <%= @user.last_name %>
 </p>
 
+<p>
+  <strong>My total</strong>
+</p>
+<% @user_orders.each do |order| %>
+ <p><%= link_to order.total, order_path(order) %><p>
+<% end %>
+
+<p>
+  <strong>order ids</strong>
+</p>
+
+<% @user_orders.each do |order| %>
+<p><%= link_to order.product_id, order_path(order) %><p>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
